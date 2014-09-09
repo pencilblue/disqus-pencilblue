@@ -1,5 +1,5 @@
 /**
- * FacebookComments - Add Facebook comments to your articles
+ * FacebookComments - Add Disqus comments to your articles
  * look like.
  *
  * @author Blake Callens blake@pencilblue.org>

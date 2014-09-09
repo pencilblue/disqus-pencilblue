@@ -1,11 +1,11 @@
 /**
- * FacebookComments - Add Disqus comments to your articles
+ * DisqusComments - Add Disqus comments to your articles
  * look like.
  *
  * @author Blake Callens blake@pencilblue.org>
  * @copyright 2014 PencilBlue, LLC
  */
-function FacebookComments(){}
+function DisqusComments(){}
 
 /**
  * Called when the application is being installed for the first time.
@@ -13,7 +13,7 @@ function FacebookComments(){}
  * @param cb A callback that must be called upon completion.  cb(Error, Boolean).
  * The result should be TRUE on success and FALSE on failure
  */
-FacebookComments.onInstall = function(cb) {
+DisqusComments.onInstall = function(cb) {
     cb(null, true);
 };
 
@@ -25,7 +25,7 @@ FacebookComments.onInstall = function(cb) {
  * @param cb A callback that must be called upon completion.  cb(Error, Boolean).
  * The result should be TRUE on success and FALSE on failure
  */
-FacebookComments.onUninstall = function(cb) {
+DisqusComments.onUninstall = function(cb) {
     cb(null, true);
 };
 
@@ -37,7 +37,7 @@ FacebookComments.onUninstall = function(cb) {
  * @param cb A callback that must be called upon completion.  cb(Error, Boolean).
  * The result should be TRUE on success and FALSE on failure
  */
-FacebookComments.onStartup = function(cb) {
+DisqusComments.onStartup = function(cb) {
     pb.TemplateService.registerGlobal('disqus_shortname', function(flag, cb) {
         pb.plugins.getSetting('disqus_shortname', 'disqus-pencilblue', function(err, disqusShortname) {
             cb(err, disqusShortname);
@@ -54,9 +54,9 @@ FacebookComments.onStartup = function(cb) {
  * @param cb A callback that must be called upon completion.  cb(Error, Boolean).
  * The result should be TRUE on success and FALSE on failure
  */
-FacebookComments.onShutdown = function(cb) {
+DisqusComments.onShutdown = function(cb) {
     cb(null, true);
 };
 
 //exports
-module.exports = FacebookComments;
+module.exports = DisqusComments;

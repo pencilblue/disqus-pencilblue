@@ -1,0 +1,40 @@
+{
+    "uid": "disqus-pencilblue",
+    "name": "Disqus Comments",
+    "description": "Add Disqus comments to your articles.",
+    "version": "0.1.0",
+    "author": {
+        "name": "PencilBlue",
+        "email": "info@pencilblue.org",
+        "website": "http://pencilblue.org",
+        "contributors": [
+            {
+                "name": "Blake Callens",
+                "email": ""
+            },
+            {
+                "name": "Brian Hyder",
+                "email": ""
+            }
+        ]
+    },
+    "settings": [
+        {
+            "name": "disqus_shortname",
+            "value": ""
+        }
+    ],
+    "permissions": {
+        "ACCESS_USER": [],
+        "ACCESS_WRITER": [],
+        "ACCESS_EDITOR": [],
+        "ACCESS_MANAGING_EDITOR": []
+    },
+    "main_module": {
+        "path": "disqus.js"
+    },
+    "theme": {
+        "settings": [],
+        "content_templates":[]
+    }
+}

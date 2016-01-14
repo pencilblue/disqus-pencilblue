@@ -3,8 +3,8 @@
     var disqus_shortname = '^disqus_shortname^';
     var disqus_identifier = '^article_id^';
     var disqus_title = '^article_headline_nolink^';
-    var href = window.location.href;
-    var disqus_url = href + '^article_permalink^';
+    var host = window.location.host;
+    var disqus_url = host + '^article_permalink^';
 
     var disqus_config = function () {
         this.page.disqus_shortname = disqus_shortname;

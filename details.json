@@ -3,7 +3,7 @@
     "name": "Disqus Comments",
     "description": "Add Disqus comments to your articles.",
     "version": "0.2.0",
-    "pb_version": "0.5.x",
+    "pb_version": ">=0.5.x <1.x",
     "author": {
         "name": "PencilBlue",
         "email": "info@pencilblue.org",
